@@ -3,6 +3,7 @@ package br.com.bytebank.banco.teste;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 import br.com.bytebank.banco.modelo.SaldoInsuficienteException;
+import br.com.bytebank.banco.especial.ContaEspecial;
 
 public class TesteContas {
 
@@ -10,7 +11,8 @@ public class TesteContas {
 		
 		int a = 3;
 		int b = a / 0;
-		
+
+		ContaEspecial ce = new ContaEspecial(123, 5555);
 		
 		ContaCorrente outra = null;
 		outra.deposita(200.0); 
